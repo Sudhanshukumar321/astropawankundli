@@ -56,6 +56,22 @@ h1 {
     line-height: 20px !important;
   }
 }
+.section-head-bar-2 {
+    position: relative;
+    margin: auto;
+}
+.section-head-bar-2::after, .section-head-bar-2::before {
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    content: "";
+    bottom: 20px;
+}
+.section-head-bar-2::before {
+    left: -15px;
+    background: var(--color);
+    /* transform: skewX(45deg); */
+}
 /* header */
 .full-width-header.home8-style4 {
   width: 100%;
@@ -1148,6 +1164,8 @@ img {
   }
 }
 
+
+
 /* Events */
 .pt-100 {
   padding-top: 60px;
@@ -1166,6 +1184,7 @@ img {
   font-weight: 800;
   color: #031a3d;
 }
+
 @media only screen and (max-width: 991px) {
   .sec-title3 .title {
     font-size: 32px;
@@ -1243,7 +1262,9 @@ img {
   font-size: 14px;
   display: inline-block;
 }
-
+.rs-event .event-item .event-short .content-part .event-btm .btn-part a:hover {
+    background: var(--color2);
+}
 /* about */
 .pb-100 {
   padding-bottom: 100px;
@@ -1616,4 +1637,25 @@ img {
 }
 .mb-35 {
   margin-bottom: 35px;
+}
+
+/* services */
+.service .event-item{
+  background-color: #fff;
+  border-radius: 5px;
+}
+.service .event-item:hover{
+  box-shadow: 0 0 15px rgb(0 0 0 / 25%);
+} 
+.service h4 {
+    font-size: 20px !important;
+    transition: .5s;
+    font-weight: 600 !important;
+    
+}
+.service h4:hover a{
+    color: var(--color) !important;
+}
+.service p{
+  margin-bottom: 0;
 }
